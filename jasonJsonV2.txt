@@ -1,0 +1,86 @@
+{
+  "name": "Scenario Name",
+  "processing_elements": [
+    {
+      "type": "Name Filter",
+      "input_entries": [
+        {
+          "type": "local",
+          "path": "C:\\testFilesforProject\\NamesList4.txt"
+        },
+        {
+          "type": "remte",
+          "repositoryId": "r-0001d410ba56",
+          "entryId": "14"
+        },
+        {
+          "type": "remte",
+          "repositoryId": "r-0001d410ba56",
+          "entryId": "12"
+        },
+        {
+          "type": "local",
+          "path": "C:\\testFilesforProject\\Names"
+        },
+        {
+          "type": "remte",
+          "repositoryId": "r-0001d410ba56",
+          "entryId": "17"
+        },
+        {
+          "type": "local",
+          "path": "C:\\testFilesforProject\\SampleCityNamesInCanada.txt"
+        },
+        {
+          "type": "remte",
+          "repositoryId": "r-0001d410ba56",
+          "entryId": "13"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "Key",
+          "value": "names"
+        }
+      ]
+    },
+    {
+      "type": "Length Filter",
+      "input_entries": [],
+      "parameters": [
+        {
+          "name": "Length",
+          "value": "1024"
+        },
+        {
+          "name": "Operator",
+          "value": "NEQ"
+        }
+      ]
+    },
+    {
+      "type": "Content Filter",
+      "input_entries": [],
+      "parameters": [
+        {
+          "name": "Key",
+          "value": "Canada"
+        }
+      ]
+    },
+    {
+      "type": "Count Filter",
+      "input_entries": [],
+      "parameters": [
+        {
+          "name": "Key",
+          "value": "France"
+        },
+        {
+          "name": "Min",
+          "value": "2"
+        }
+      ]
+    }
+  ]
+}
